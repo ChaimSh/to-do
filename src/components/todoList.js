@@ -1,13 +1,13 @@
 import React from 'react';
+import './TodoList.css'
 
-const TodoList = () => {
+const TodoList = props => {
     return (
-        <div className="to-do-list">
-        <h1>To Do</h1>
-     <ul className="to-do" >
-       <li>Something</li>
+      <ul className="to-do">
+         {props.todos.map((todo) => {
+             return <li key={todo.id}>{todo.text}</li>
+         })}      
      </ul>
-   </div>
     )
 }
 export default TodoList;

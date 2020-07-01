@@ -1,15 +1,3 @@
 .to-do-list h1 {
   text-align: center
 }
-
-.to-do {
-  list-style: none;
-  margin: 2rem;
-  padding: 0
-}
-
-.to-do li {
-  margin: 1rem 0;
-  border: 1px solid #ccc;
-  padding: 1rem;
-}
